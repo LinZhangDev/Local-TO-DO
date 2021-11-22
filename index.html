@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="todo-header todo-header-left">
+            <h1>Todo List</h1>
+        </div>
+        <div class="todo-header">
+            <h3>Background-color: </h3>
+            <ul class='bg-btn-container'>            
+                <button class="body-bg-btn body-bg-blue" onclick="bodyBgBlue()"></button>
+                <button class="body-bg-btn body-bg-pink" onclick="bodyBgPink()"></button>
+                <button class="body-bg-btn body-bg-teal" onclick="bodyBgTeal()"></button>
+                <button class="body-bg-btn body-bg-dark" onclick="bodyBgDark()"></button>
+                <button class="body-bg-btn body-bg-green" onclick="bodyBgGreen()"></button>
+            </ul>
+        </div>
+    </header>
+    <div class="todo-wrapper">
+        <div class="todo-add todo-div">
+            <h2 class='todo-div-title'>Add Todo</h2>  
+            <form action="submit-form" class="todo-form">
+                <textarea type="text" class='todo-div-box todo-input-title' placeholder="Enter Todo Title ..."></textarea>
+                <textarea type="text" class='todo-div-box todo-input-detail' placeholder="Enter Todo Detail ..."></textarea>
+                <button class='todo-div-box todo-input-submit'>+ Add Todo</button>
+            </form>  
+        </div>
+        <div class="todo-ongo todo-div">
+            <h2 class='todo-div-title'>In Processing</h2>
+            <ul class="todo-ongo-list"></ul>
+        </div>
+        <div class="todo-completed todo-div">
+            <h2 class='todo-div-title'>Completed</h2>
+            <ul class="todo-complete-list"></ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
